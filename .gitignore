@@ -1,6 +1,11 @@
 node_modules
 .env
 
+
+# Contracts Files
+contracts/p1.sol
+contracts/p2.sol
+
 # Hardhat files
 /cache
 /artifacts

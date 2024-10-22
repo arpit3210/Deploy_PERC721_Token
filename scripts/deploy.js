@@ -4,7 +4,7 @@ const fs = require("fs");
 
 async function main() {
     // Deploy the PrivateERC721_NFT contract with a name and symbol
-    const PrivateERC721_NFT = await ethers.deployContract("PrivateERC721", ["Private NFT", "PNFT"]);
+    const PrivateERC721_NFT = await ethers.deployContract("contracts/PERC721.sol:PrivateERC721", ["Private NFT", "PNFT"]);
     
     // Wait for the deployment to complete
     await PrivateERC721_NFT.waitForDeployment();
